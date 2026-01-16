@@ -5,9 +5,13 @@ Maniot is a lightweight, keyboard-centric Terminal User Interface (TUI) file man
 # Key Features 
 
 1 . Dual-Pane Interface: View your directory structure on the left and your editor/output on the right.
+
 2 . Live Metadata Inspector: Instant display of file size, type, line count, and character count as you browse.
-3 . Automatic Backup System: Security first! When you overwrite a file, Maniot automatically generates a .bak version to ensure you never lose work.
+
+3 . Automatic Backup System: Security first! When you overwrite a file, Maniot automatically generates a ''.bak'' version to ensure you never lose work.
+
 4 . Command-Line Control: A dedicated command input at the bottom for quick navigation and file operations.
+
 5 . Pure Python: Highly portable and easy to customize for your own workflow.
 
 # Demo
@@ -49,31 +53,47 @@ pip install -r requiremnts.txt
 ```bash
 python main.py
 ```
-## *Commands and Navigation*
+*Commands and Navigation*
 
-## Commands 
+*Commands*
 
-:rename NAME        → Rename current tab
-:NAME               → Jump to tab named NAME
-u PATH              → Open directory PATH in file pane
-a FILE              → Append editor content to FILE
-w FILE              → Overwrite FILE (asks confirmation if file exists)
-w! FILE             → Force overwrite FILE (no confirmation)
-ow FILE             → Overwrite FILE and keep a backup (.bak)
-mkdir PATH          → Create directory PATH
-rm PATH             → Remove file or directory PATH
-saveas FILE         → Save editor content as FILE
+-:rename NAME        → Rename current tab
+
+-:NAME               → Jump to tab named NAME
+
+-u PATH              → Open directory PATH in file pane
+
+-a FILE              → Append editor content to FILE
+
+-w FILE              → Overwrite FILE (asks confirmation if file exists)
+
+-w! FILE             → Force overwrite FILE (no confirmation)
+
+-ow FILE             → Overwrite FILE and keep a backup (.bak)
+
+-mkdir PATH          → Create directory PATH
+
+-rm PATH             → Remove file or directory PATH
+
+-saveas FILE         → Save editor content as FILE
 
 ## Keybindings 
 
-Ctrl+S              → Save current file
-Ctrl+Shift+S        → Save As
-Ctrl+Z              → Undo
-Ctrl+Shift+Z        → Redo
-Alt+N               → New tab
-Alt+W               → Close current tab
-Alt+H / Alt+L       → Switch tab left/right
-Alt+Q               → Quit editor
+-Ctrl+S              → Save current file
+
+-Ctrl+Shift+S        → Save As
+
+-Ctrl+z              → Undo
+
+-Ctrl+y              → Redo
+
+-Alt+n               → New tab
+
+-Alt+w               → Close current tab
+
+-Alt+h / Alt+l       → Switch tab left/right
+
+-Alt+q               → Quit editor
 
 ## Notes 
 
@@ -82,7 +102,7 @@ Alt+Q               → Quit editor
 - Multi-line editing is enabled by default
 - Existing files are never overwritten silently
 
-# File - Struscture
+# File - Structure
 
 The project is divided into specialized modules to keep the logic clean and maintainable:
 
@@ -110,6 +130,6 @@ Maniot is designed with a State-Action architecture. To add a new functionality 
 
 # Licence 
 
-This project is 
+This project is Licenced under GNU Affero General Public License version 3 .
 
 
