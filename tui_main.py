@@ -27,7 +27,7 @@ active_editor = 0
 pending_overwrite = None
 
 HELP_CONTENT = """\
-Welcome to Maniot TUI Editor!
+Welcome to Maniot Editor!
 
 --- Commands ---
 :rename NAME        → Rename current tab
@@ -42,14 +42,14 @@ rm PATH             → Remove file or directory PATH
 saveas FILE         → Save editor content as FILE
 
 --- Keybindings ---
-Ctrl+S              → Save current file
-Ctrl+Shift+S        → Save As
-Ctrl+Z              → Undo
-Ctrl+Shift+Z        → Redo
-Alt+N               → New tab
-Alt+W               → Close current tab
-Alt+H / Alt+L       → Switch tab left/right
-Alt+Q               → Quit editor
+Ctrl+s              → Save current file
+Ctrl+Shift+s        → Save As
+Ctrl+z              → Undo
+Ctrl+y              → Redo
+Alt+n               → New tab
+Alt+w               → Close current tab
+Alt+h / Alt+l       → Switch tab left/right
+Alt+q               → Quit editor
 
 --- Notes ---
 - Arrow keys navigate the directory pane
@@ -630,3 +630,4 @@ refresh_editor()
 
 if __name__ == "__main__":
     app.run()
+
