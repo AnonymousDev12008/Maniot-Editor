@@ -2,7 +2,7 @@
 
 Maniot is a lightweight, keyboard-centric Terminal User Interface (TUI) file manager and editor built with Python. It provides a split-pane environment to navigate directories, inspect file metadata, and edit text files—all without leaving your terminal.
 
-# Key Features 
+# *Key Features* 
 
 1 . Dual-Pane Interface: View your directory structure on the left and your editor/output on the right.
 
@@ -14,11 +14,11 @@ Maniot is a lightweight, keyboard-centric Terminal User Interface (TUI) file man
 
 5 . Pure Python: Highly portable and easy to customize for your own workflow.
 
-# Demo
+# *Demo*
 
 ![Maniot Demo](demo.gif)
 
-# Installation 
+# *Installation* 
 
 *1 .* *Clone the Repo* 
 
@@ -27,7 +27,7 @@ git clone https://github.com/Anonymous/Maniot-Editor.git
 cd Maniot-Editor
 ```
 
-# Setting Environment 
+# *Setting Environment*
 
 ```bash
 python -m venv .venv
@@ -41,59 +41,59 @@ python -m venv .venv
 source .venv/bin/activate
 ```
 
-# Installing Dependencies
+# *Installing Dependencies*
 
 ```bash
 pip install -r requiremnts.txt
 ```
 
-# How to use
+# *How to use*
 
 ## *Launch the Editor*
 ```bash
 python main.py
 ```
-*Commands and Navigation*
+## *Commands and Navigation*
 
-*Commands*
+### *Commands*
 
--:rename NAME        → Rename current tab
+:rename NAME        → Rename current tab
 
--:NAME               → Jump to tab named NAME
+:NAME               → Jump to tab named NAME
 
--u PATH              → Open directory PATH in file pane
+u PATH              → Open directory PATH in file pane
 
--a FILE              → Append editor content to FILE
+a FILE              → Append editor content to FILE
 
--w FILE              → Overwrite FILE (asks confirmation if file exists)
+w FILE              → Overwrite FILE (asks confirmation if file exists)
 
--w! FILE             → Force overwrite FILE (no confirmation)
+w! FILE             → Force overwrite FILE (no confirmation)
 
--ow FILE             → Overwrite FILE and keep a backup (.bak)
+ow FILE             → Overwrite FILE and keep a backup (.bak)
 
--mkdir PATH          → Create directory PATH
+mkdir PATH          → Create directory PATH
 
--rm PATH             → Remove file or directory PATH
+rm PATH             → Remove file or directory PATH
 
--saveas FILE         → Save editor content as FILE
+saveas FILE         → Save editor content as FILE
 
-## Keybindings 
+### *Keybindings*
 
--Ctrl+S              → Save current file
+Ctrl+s              → Save current file
 
--Ctrl+Shift+S        → Save As
+Ctrl+Shift+s        → Save As
 
--Ctrl+z              → Undo
+Ctrl+z              → Undo
 
--Ctrl+y              → Redo
+Ctrl+y              → Redo
 
--Alt+n               → New tab
+Alt+n               → New tab
 
--Alt+w               → Close current tab
+Alt+w               → Close current tab
 
--Alt+h / Alt+l       → Switch tab left/right
+Alt+h / Alt+l       → Switch tab left/right
 
--Alt+q               → Quit editor
+Alt+q               → Quit editor
 
 ## Notes 
 
