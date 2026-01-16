@@ -1,4 +1,4 @@
-# Maniot (Maniot-Editor)
+# *Maniot (Maniot-Editor)*
 
 Maniot is a lightweight, keyboard-centric Terminal User Interface (TUI) file manager and editor built with Python. It provides a split-pane environment to navigate directories, inspect file metadata, and edit text files—all without leaving your terminal.
 
