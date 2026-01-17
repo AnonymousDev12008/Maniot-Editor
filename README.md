@@ -95,6 +95,8 @@ Alt+h / Alt+l       → Switch tab left/right
 
 Alt+q               → Quit editor
 
+Tab                 → Switch Between Panes
+
 ## Notes 
 
 - Arrow keys navigate the directory pane
