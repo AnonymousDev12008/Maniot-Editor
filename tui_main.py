@@ -50,6 +50,7 @@ Alt+n               → New tab
 Alt+w               → Close current tab
 Alt+h / Alt+l       → Switch tab left/right
 Alt+q               → Quit editor
+Tab / Shift+Tab     → Switch Between Panes
 
 --- Notes ---
 - Arrow keys navigate the directory pane
