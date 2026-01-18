@@ -14,4 +14,4 @@ class AppState:
         self.mode: str = "idle"
         self.message: str = "Press 'u' to load a directory | Tab to switch panes | q to quit"
         self.buffer: str = ""
-        #still self.buffer is causing some error
+       
