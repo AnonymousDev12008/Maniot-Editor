@@ -324,10 +324,11 @@ def handle_command(text: str):
 
     # ---------- Load directory ----------
     if cmd == "u" and arg:
-        p = Path(arg)
-        if p.exists() and p.is_dir():
-            d.load(p)
-            set_message(f"Loaded directory: {p}")
+        global pt
+        pt = Path(arg)
+        if pt.exists() and pt.is_dir():
+            d.load(pt)
+            set_message(f"Loaded directory: {pt}")
             refresh_directory()
         else:
             set_message("Invalid directory")
@@ -497,6 +498,9 @@ def _(e):
 @kb.add("backspace", filter=has_focus(directory_pane))
 def _(e):
     d = current_editor()["dir"]
+    if d.cwd == pt :
+        set_message("Can't access direcory outside initial directory loaded !")
+        return
     if d.cwd:
         d.load(d.cwd.parent)
         refresh_directory()
@@ -563,6 +567,9 @@ def _(e):
     set_message(msg)
     refresh_status()
     refresh_directory()
+    load_to_editor(d.selected, "r")
+    e.app.layout.focus_previous()
+    
 
 @kb.add("escape", "s")  # Save As
 def _(e):
