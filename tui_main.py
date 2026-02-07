@@ -558,6 +558,7 @@ def _(e):
 @kb.add("c-s")  # Ctrl+s
 def _(e):
     ed = current_editor()
+    d=current_editor()["dir"]
     path = ed["file"]
     if not path:
         set_message("No file loaded in current tab")
