@@ -53,6 +53,8 @@ Alt+q               → Quit editor
 Tab / Shift+Tab     → Switch Between Panes
 
 --- Notes ---
+- Check for mode reset on prompting for operation
+  save
 - Arrow keys navigate the directory pane
 - Enter opens files or enters directories
 - Multi-line editing is enabled by default
